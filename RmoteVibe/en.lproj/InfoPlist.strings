@@ -1,0 +1,2 @@
+"NSMicrophoneUsageDescription" = "RmoteVibe listens to this Mac’s microphone and plays it through RmoteVibe Mic while the Siri button is not held.";
+"NSBluetoothAlwaysUsageDescription" = "RmoteVibe searches for an unpaired Siri Remote and asks macOS to pair the one you pick. While Siri is held it looks up the paired remote. That microphone is not a Mac input device.";

@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000040 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* AppMain.swift */; };
+		A10000000000000000000041 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* AppModel.swift */; };
+		A10000000000000000000042 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* MenuBarController.swift */; };
+		A10000000000000000000043 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000023 /* SettingsWindowController.swift */; };
+		A10000000000000000000044 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000024 /* Preferences.swift */; };
+		A10000000000000000000045 /* HIDRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000025 /* HIDRemote.swift */; };
+		A10000000000000000000046 /* TalkTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000026 /* TalkTrigger.swift */; };
+		A10000000000000000000047 /* MacMicrophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000027 /* MacMicrophone.swift */; };
+		A10000000000000000000048 /* VirtualMicrophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000028 /* VirtualMicrophone.swift */; };
+		A10000000000000000000049 /* RemoteMicCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000029 /* RemoteMicCapture.swift */; };
+		A100000000000000000000B3 /* TouchSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A3 /* TouchSurface.swift */; };
+		A100000000000000000000B4 /* ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A4 /* ButtonActions.swift */; };
+		A100000000000000000000B5 /* MediaSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A5 /* MediaSuppression.swift */; };
+		A1000000000000000000004A /* RingBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000002A /* RingBuffer.c */; };
+		A1000000000000000000004B /* RMVBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000037 /* RMVBluetooth.m */; };
+		A100000000000000000000C2 /* RMVVoiceCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000C1 /* RMVVoiceCapture.m */; };
+		A100000000000000000000D2 /* RMVHCITrace.c in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000D1 /* RMVHCITrace.c */; };
+		A1000000000000000000004C /* RMVInputSources.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000039 /* RMVInputSources.m */; };
+		A1000000000000000000004D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000003A /* Localizable.strings */; };
+		A1000000000000000000004E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000003B /* InfoPlist.strings */; };
+		A100000000000000000000E3 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000E0 /* AppIcon.icns */; };
+		A100000000000000000000E4 /* MenuBarRemote.png in Resources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000E1 /* MenuBarRemote.png */; };
+		A100000000000000000000E5 /* MenuBarRemote@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000E2 /* MenuBarRemote@2x.png */; };
+		A10000000000000000000050 /* PlugIn.c in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000002E /* PlugIn.c */; };
+		A10000000000000000000051 /* RingBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000002A /* RingBuffer.c */; };
+		A10000000000000000000060 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000072 /* IOBluetooth.framework */; };
+		A10000000000000000000061 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000073 /* Carbon.framework */; };
+		A10000000000000000000062 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000074 /* AVFoundation.framework */; };
+		A10000000000000000000063 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000070 /* CoreAudio.framework */; };
+		A10000000000000000000064 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000075 /* IOKit.framework */; };
+		A10000000000000000000065 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000076 /* ApplicationServices.framework */; };
+		A10000000000000000000066 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000077 /* ServiceManagement.framework */; };
+		A100000000000000000000B6 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A6 /* LoginItem.swift */; };
+		A10000000000000000000092 /* RmoteVibeMic.driver in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* RmoteVibeMic.driver */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000000000000000000002;
+			remoteInfo = RmoteVibeMic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10000000000000000000083 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10000000000000000000092 /* RmoteVibeMic.driver in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000003 /* RmoteVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RmoteVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000004 /* RmoteVibeMic.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RmoteVibeMic.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000020 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		A10000000000000000000021 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000022 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		A10000000000000000000023 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		A10000000000000000000024 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		A10000000000000000000025 /* HIDRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDRemote.swift; sourceTree = "<group>"; };
+		A10000000000000000000026 /* TalkTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTrigger.swift; sourceTree = "<group>"; };
+		A10000000000000000000027 /* MacMicrophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMicrophone.swift; sourceTree = "<group>"; };
+		A10000000000000000000028 /* VirtualMicrophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMicrophone.swift; sourceTree = "<group>"; };
+		A10000000000000000000029 /* RemoteMicCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMicCapture.swift; sourceTree = "<group>"; };
+		A100000000000000000000A3 /* TouchSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchSurface.swift; sourceTree = "<group>"; };
+		A100000000000000000000A4 /* ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActions.swift; sourceTree = "<group>"; };
+		A100000000000000000000A5 /* MediaSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSuppression.swift; sourceTree = "<group>"; };
+		A1000000000000000000002A /* RingBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RingBuffer.c; sourceTree = "<group>"; };
+		A1000000000000000000002B /* RingBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		A1000000000000000000002C /* RmoteVibe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RmoteVibe-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1000000000000000000002D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000000000000000000002E /* PlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PlugIn.c; sourceTree = "<group>"; };
+		A1000000000000000000002F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A10000000000000000000031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A10000000000000000000032 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A10000000000000000000033 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A10000000000000000000034 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A10000000000000000000035 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A10000000000000000000036 /* RMVBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMVBluetooth.h; sourceTree = "<group>"; };
+		A10000000000000000000037 /* RMVBluetooth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMVBluetooth.m; sourceTree = "<group>"; };
+		A100000000000000000000C0 /* RMVVoiceCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMVVoiceCapture.h; sourceTree = "<group>"; };
+		A100000000000000000000C1 /* RMVVoiceCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMVVoiceCapture.m; sourceTree = "<group>"; };
+		A100000000000000000000D0 /* RMVHCITrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMVHCITrace.h; sourceTree = "<group>"; };
+		A100000000000000000000D1 /* RMVHCITrace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RMVHCITrace.c; sourceTree = "<group>"; };
+		A10000000000000000000038 /* RMVInputSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMVInputSources.h; sourceTree = "<group>"; };
+		A10000000000000000000039 /* RMVInputSources.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMVInputSources.m; sourceTree = "<group>"; };
+		A10000000000000000000070 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A10000000000000000000072 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		A10000000000000000000073 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A10000000000000000000074 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A10000000000000000000075 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A10000000000000000000076 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		A10000000000000000000077 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		A100000000000000000000A6 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		A100000000000000000000E0 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		A100000000000000000000E1 /* MenuBarRemote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarRemote.png; sourceTree = "<group>"; };
+		A100000000000000000000E2 /* MenuBarRemote@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBarRemote@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000000000081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000060 /* IOBluetooth.framework in Frameworks */,
+				A10000000000000000000061 /* Carbon.framework in Frameworks */,
+				A10000000000000000000062 /* AVFoundation.framework in Frameworks */,
+				A10000000000000000000063 /* CoreAudio.framework in Frameworks */,
+				A10000000000000000000064 /* IOKit.framework in Frameworks */,
+				A10000000000000000000065 /* ApplicationServices.framework in Frameworks */,
+				A10000000000000000000066 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000010 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000011 /* RmoteVibe */,
+				A10000000000000000000012 /* RmoteVibeMic */,
+				A10000000000000000000014 /* Frameworks */,
+				A10000000000000000000013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000011 /* RmoteVibe */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000020 /* AppMain.swift */,
+				A10000000000000000000021 /* AppModel.swift */,
+				A10000000000000000000022 /* MenuBarController.swift */,
+				A10000000000000000000023 /* SettingsWindowController.swift */,
+				A10000000000000000000024 /* Preferences.swift */,
+				A10000000000000000000025 /* HIDRemote.swift */,
+				A10000000000000000000026 /* TalkTrigger.swift */,
+				A10000000000000000000027 /* MacMicrophone.swift */,
+				A10000000000000000000028 /* VirtualMicrophone.swift */,
+				A10000000000000000000029 /* RemoteMicCapture.swift */,
+				A100000000000000000000A3 /* TouchSurface.swift */,
+				A100000000000000000000A6 /* LoginItem.swift */,
+				A100000000000000000000A4 /* ButtonActions.swift */,
+				A100000000000000000000A5 /* MediaSuppression.swift */,
+				A10000000000000000000036 /* RMVBluetooth.h */,
+				A10000000000000000000037 /* RMVBluetooth.m */,
+				A100000000000000000000C0 /* RMVVoiceCapture.h */,
+				A100000000000000000000C1 /* RMVVoiceCapture.m */,
+				A100000000000000000000D0 /* RMVHCITrace.h */,
+				A100000000000000000000D1 /* RMVHCITrace.c */,
+				A10000000000000000000038 /* RMVInputSources.h */,
+				A10000000000000000000039 /* RMVInputSources.m */,
+				A1000000000000000000002A /* RingBuffer.c */,
+				A1000000000000000000002B /* RingBuffer.h */,
+				A1000000000000000000002C /* RmoteVibe-Bridging-Header.h */,
+				A1000000000000000000002D /* Info.plist */,
+				A100000000000000000000E0 /* AppIcon.icns */,
+				A100000000000000000000E1 /* MenuBarRemote.png */,
+				A100000000000000000000E2 /* MenuBarRemote@2x.png */,
+				A1000000000000000000003A /* Localizable.strings */,
+				A1000000000000000000003B /* InfoPlist.strings */,
+			);
+			path = RmoteVibe;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000012 /* RmoteVibeMic */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000002E /* PlugIn.c */,
+				A1000000000000000000002F /* Info.plist */,
+			);
+			path = RmoteVibeMic;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* RmoteVibe.app */,
+				A10000000000000000000004 /* RmoteVibeMic.driver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000070 /* CoreAudio.framework */,
+				A10000000000000000000072 /* IOBluetooth.framework */,
+				A10000000000000000000073 /* Carbon.framework */,
+				A10000000000000000000074 /* AVFoundation.framework */,
+				A10000000000000000000075 /* IOKit.framework */,
+				A10000000000000000000076 /* ApplicationServices.framework */,
+				A10000000000000000000077 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000001 /* RmoteVibe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000007 /* Build configuration list for PBXNativeTarget "RmoteVibe" */;
+			buildPhases = (
+				A10000000000000000000080 /* Sources */,
+				A10000000000000000000081 /* Frameworks */,
+				A10000000000000000000082 /* Resources */,
+				A10000000000000000000083 /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10000000000000000000090 /* PBXTargetDependency */,
+			);
+			name = RmoteVibe;
+			productName = RmoteVibe;
+			productReference = A10000000000000000000003 /* RmoteVibe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A10000000000000000000002 /* RmoteVibeMic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000008 /* Build configuration list for PBXNativeTarget "RmoteVibeMic" */;
+			buildPhases = (
+				A10000000000000000000084 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RmoteVibeMic;
+			productName = RmoteVibeMic;
+			productReference = A10000000000000000000004 /* RmoteVibeMic.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A10000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000006 /* Build configuration list for PBXProject "RmoteVibe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = A10000000000000000000010;
+			productRefGroup = A10000000000000000000013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000001 /* RmoteVibe */,
+				A10000000000000000000002 /* RmoteVibeMic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000000000000000000082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000004D /* Localizable.strings in Resources */,
+				A1000000000000000000004E /* InfoPlist.strings in Resources */,
+				A100000000000000000000E3 /* AppIcon.icns in Resources */,
+				A100000000000000000000E4 /* MenuBarRemote.png in Resources */,
+				A100000000000000000000E5 /* MenuBarRemote@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000040 /* AppMain.swift in Sources */,
+				A10000000000000000000041 /* AppModel.swift in Sources */,
+				A10000000000000000000042 /* MenuBarController.swift in Sources */,
+				A10000000000000000000043 /* SettingsWindowController.swift in Sources */,
+				A10000000000000000000044 /* Preferences.swift in Sources */,
+				A10000000000000000000045 /* HIDRemote.swift in Sources */,
+				A10000000000000000000046 /* TalkTrigger.swift in Sources */,
+				A10000000000000000000047 /* MacMicrophone.swift in Sources */,
+				A10000000000000000000048 /* VirtualMicrophone.swift in Sources */,
+				A10000000000000000000049 /* RemoteMicCapture.swift in Sources */,
+				A100000000000000000000B3 /* TouchSurface.swift in Sources */,
+				A100000000000000000000B6 /* LoginItem.swift in Sources */,
+				A100000000000000000000B4 /* ButtonActions.swift in Sources */,
+				A100000000000000000000B5 /* MediaSuppression.swift in Sources */,
+				A1000000000000000000004A /* RingBuffer.c in Sources */,
+				A1000000000000000000004B /* RMVBluetooth.m in Sources */,
+				A100000000000000000000C2 /* RMVVoiceCapture.m in Sources */,
+				A100000000000000000000D2 /* RMVHCITrace.c in Sources */,
+				A1000000000000000000004C /* RMVInputSources.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000050 /* PlugIn.c in Sources */,
+				A10000000000000000000051 /* RingBuffer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000000000000000000090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000002 /* RmoteVibeMic */;
+			targetProxy = A10000000000000000000091 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1000000000000000000003A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10000000000000000000030 /* en */,
+				A10000000000000000000032 /* zh-Hans */,
+				A10000000000000000000034 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000003B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10000000000000000000031 /* en */,
+				A10000000000000000000033 /* zh-Hans */,
+				A10000000000000000000035 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1000000000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/RmoteVibe",
+					/opt/homebrew/include,
+				);
+				INFOPLIST_FILE = RmoteVibe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = /opt/homebrew/lib/libopus.a;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rmotevibe.RmoteVibe;
+				PRODUCT_NAME = RmoteVibe;
+				SWIFT_APPROACHABLE_CONCURRENCY = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "RmoteVibe/RmoteVibe-Bridging-Header.h";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1000000000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/RmoteVibe",
+					/opt/homebrew/include,
+				);
+				INFOPLIST_FILE = RmoteVibe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = /opt/homebrew/lib/libopus.a;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rmotevibe.RmoteVibe;
+				PRODUCT_NAME = RmoteVibe;
+				SWIFT_APPROACHABLE_CONCURRENCY = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "RmoteVibe/RmoteVibe-Bridging-Header.h";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/RmoteVibe";
+				INFOPLIST_FILE = RmoteVibeMic/Info.plist;
+				INSTALL_PATH = "/Library/Audio/Plug-Ins/HAL";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				MACH_O_TYPE = mh_bundle;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = "-framework CoreAudio -framework CoreFoundation -Wl,-exported_symbol,_RmoteVibeMic_Create";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rmotevibe.RmoteVibeMic;
+				PRODUCT_NAME = RmoteVibeMic;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		A1000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/RmoteVibe";
+				INFOPLIST_FILE = RmoteVibeMic/Info.plist;
+				INSTALL_PATH = "/Library/Audio/Plug-Ins/HAL";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				MACH_O_TYPE = mh_bundle;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = "-framework CoreAudio -framework CoreFoundation -Wl,-exported_symbol,_RmoteVibeMic_Create";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rmotevibe.RmoteVibeMic;
+				PRODUCT_NAME = RmoteVibeMic;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000006 /* Build configuration list for PBXProject "RmoteVibe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000009 /* Debug */,
+				A1000000000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000007 /* Build configuration list for PBXNativeTarget "RmoteVibe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000000B /* Debug */,
+				A1000000000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000008 /* Build configuration list for PBXNativeTarget "RmoteVibeMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000000D /* Debug */,
+				A1000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000005 /* Project object */;
+}

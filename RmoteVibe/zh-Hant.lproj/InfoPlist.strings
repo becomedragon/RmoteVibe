@@ -1,0 +1,2 @@
+"NSMicrophoneUsageDescription" = "沒有按住 Siri 鍵時，RmoteVibe 會聽這台 Mac 的麥克風，並把它送到 RmoteVibe Mic。";
+"NSBluetoothAlwaysUsageDescription" = "RmoteVibe 會搜尋還沒配對的 Siri Remote，並請 macOS 配對你選的那一隻。按住 Siri 時，它會查看這隻已配對的遙控器。遙控器麥克風不是這台 Mac 的輸入裝置。";
