@@ -104,6 +104,14 @@
     return device != nil && device.isPaired;
 }
 
+- (NSString *)deviceNameForAddress:(NSString *)address {
+    return [self lookupAddress:address].name;
+}
+
+- (NSString *)resolvedAddressForAddress:(NSString *)address {
+    return [self lookupAddress:address].addressString;
+}
+
 static NSString *RMVCanonicalAddress(NSString *raw);
 
 static NSString *RMVColonAddressFromHex(NSString *hex) {

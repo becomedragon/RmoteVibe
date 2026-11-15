@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (int32_t)reconnectAddress:(NSString *)address;
 - (BOOL)isAddressConnected:(NSString *)address;
 - (BOOL)isAddressPaired:(NSString *)address;
+- (nullable NSString *)deviceNameForAddress:(NSString *)address;
+- (nullable NSString *)resolvedAddressForAddress:(NSString *)address;
 @end
 
 NS_ASSUME_NONNULL_END

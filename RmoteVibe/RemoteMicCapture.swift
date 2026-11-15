@@ -24,6 +24,9 @@ final class RemoteMicCapture {
         set { session.preferredAddress = newValue }
     }
 
+    var deviceName: String? { session.deviceName }
+    var deviceAddress: String? { session.deviceAddress }
+
     var onChange: (() -> Void)? {
         didSet {
             session.statusChanged = { [weak self] in
