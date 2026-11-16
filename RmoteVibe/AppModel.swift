@@ -202,6 +202,44 @@ final class AppModel {
         }
     }
 
+    enum RemoteStatusKind {
+        case connected
+        case reconnecting
+        case pairedIdle
+        case disconnected
+    }
+
+    func remoteStatusKind() -> RemoteStatusKind {
+        if remote.isConnected { return .connected }
+        if reconnecting { return .reconnecting }
+        if bluetooth.isAddressPaired(preferences.pairedAddress) { return .pairedIdle }
+        return .disconnected
+    }
+
+    func remoteDeviceDisplay() -> String {
+        if let name = bluetooth.deviceName(forAddress: preferences.pairedAddress), !name.isEmpty {
+            if name.localizedCaseInsensitiveContains("A2854") || name.localizedCaseInsensitiveContains("Siri") {
+                return name
+            }
+            return "A2854 \(name)"
+        }
+        if let name = remoteMic.deviceName, !name.isEmpty {
+            return "A2854 \(name)"
+        }
+        return "A2854"
+    }
+
+    func remoteAddressDisplay() -> String {
+        if let address = bluetooth.resolvedAddress(forAddress: preferences.pairedAddress), !address.isEmpty {
+            return address.uppercased()
+        }
+        if let address = remoteMic.deviceAddress, !address.isEmpty {
+            return address.uppercased()
+        }
+        let stored = preferences.pairedAddress
+        return stored.isEmpty ? NSLocalizedString("settings.remote.none", comment: "") : stored.uppercased()
+    }
+
     func remoteText() -> String {
         var line: String
         if remote.isConnected {

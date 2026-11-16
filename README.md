@@ -1,36 +1,54 @@
 # RmoteVibe
 
-Use an **Apple TV Siri Remote** (HID vendor `0x004C`, product `0x0315`, A2854) as a Mac pointer, keyboard, and push-to-talk mic.
+Personal Mac menu-bar app. **Not** for the Mac App Store.
 
-Pair it in Bluetooth like any HID remote. RmoteVibe does **not** need the remote’s serial number.
+Use a **USB-C Apple TV Siri Remote** (model A2854, Apple VID `0x004C` PID `0x0315`, Bluetooth LE HID) as a pointer, keyboard, and push-to-talk mic on Apple Silicon macOS.
 
-用 **Apple TV Siri Remote**（HID 厂商 `0x004C`、产品 `0x0315`，A2854）当 Mac 的触控板、按键和按住说话麦克风。
+个人用的 Mac 菜单栏应用，**不上** Mac App Store。
 
-在系统蓝牙里配对即可。序列号不是配置项。
+把 **USB-C Apple TV Siri Remote**（型号 A2854，Apple VID `0x004C` PID `0x0315`，蓝牙 LE HID）当成 Apple Silicon Mac 的触控板、按键和按住说话麦克风。
 
 ![App icon](docs/screenshots/app-icon.png)
 
 <p align="center">
-  <img src="docs/screenshots/menu-bar.png" alt="Menu bar" width="480">
-  <img src="docs/screenshots/settings.png" alt="Settings" width="480">
+  <img src="docs/screenshots/menu-bar.png" alt="Menu bar icon" width="520">
 </p>
 
-## Features · 功能
+## Usage · 用法
 
-- **Hold Siri for 豆包 / WeChat.** Holding the side Siri button posts the talk key (Fn by default) and, while a Bluetooth HCI trace is readable, feeds the remote’s Opus voice into **RmoteVibe Mic**. 豆包 or 微信输入法 does the recognition. On release, the virtual mic goes back to the Mac microphone.
-- **按住 Siri 给豆包 / 微信说话。** 按住侧面 Siri 键会发出按住说话热键（默认 Fn）。蓝牙 HCI 记录可读时，遥控器的 Opus 语音写入 **RmoteVibe Mic**。识别仍由豆包或微信输入法完成。松开后虚拟麦回到这台 Mac 的麦克风。
-- **Trackpad.** One finger moves the pointer. A short tap clicks. An edge swipe scrolls. Click-ring center plus travel drags.
-- **触控板。** 单指移动指针，短按点击，边缘滑动滚动。按住圆环中心再移动即可拖拽。
-- **Button maps.** Back, Home, Play/Pause, Mute, Volume stay remappable in Settings. Siri stays on voice. Click-ring directions are not mapped in this version.
-- **按键映射。** 返回、主页、播放/暂停、静音、音量可在设置里改。Siri 只负责语音。这一版不映射圆环方向键。
-- **Login item.** Open at login via `SMAppService` (on by default; macOS may still ask in Login Items).
-- **登录项。** 默认用 `SMAppService` 开机启动（系统仍可能要你在「登录项」里点一次允许）。
+- **Menu bar + Settings.** Lives in the menu bar. **Settings…** opens a glass sidebar window (General, Remote, Buttons, Touch, Voice, Permissions).
+- **菜单栏 + 设置。** 驻留菜单栏。点 **设置…** 打开玻璃侧边栏窗口（通用、遥控器、按键、触控、语音、权限）。
+- **Hold Siri = push-to-talk.** Holding the side Siri button feeds the remote mic into **RmoteVibe Mic** (HAL plugin). Doubao (豆包) or WeChat IME (微信输入法) does the recognition. Leave 豆包’s input source on **Auto**.
+- **按住 Siri = 按住说话。** 按住侧面 Siri 键，遥控麦克风写入 **RmoteVibe Mic**（HAL 插件）。识别仍由豆包 / 微信输入法完成。豆包输入源保持 **自动**。
+- **Touch.** Move the pointer, tap to click, edge-swipe to scroll, center-hold to drag. Default gain **680**.
+- **触控。** 移动指针、点按、边缘滑动滚动、按住中心拖拽。默认增益 **680**。
+- **Buttons.** Back, Home, Play/Pause, Mute, Volume are remappable. **Siri stays on voice.** Defaults: Back → Escape, Home → Return.
+- **按键。** 返回、主页、播放/暂停、静音、音量可改。**Siri 只负责语音。** 默认：返回 → Escape，主页 → Return。
+- **Permissions.** Grant **Accessibility** and **Input Monitoring** (and Bluetooth, Microphone, Login Items). An ad-hoc replace can drop TCC; toggle them again if that happens.
+- **权限。** 需要 **辅助功能** 和 **输入监视**（以及蓝牙、麦克风、登录项）。临时签名换包可能丢掉授权，那时再开一次。
+
+## Hardware · 硬件
+
+| | |
+| --- | --- |
+| Remote · 遥控器 | USB-C Apple TV Siri Remote, model **A2854** |
+| HID | Apple vendor `0x004C`, product `0x0315`, Bluetooth LE HID |
+| Pairing · 配对 | Hold **Back + Volume Up** ~5 seconds until the light flashes · 按住 **返回 + 音量加** 约五秒直到灯闪 |
+| Mac | Apple Silicon macOS |
+
+The remote is exclusive: turn the Apple TV off or unplug it, or it reconnects there. Pair in RmoteVibe Settings or in Bluetooth settings. Connected means IOHID sees product `0x0315`. No serial number is required.
+
+遥控器同时只能连一边：先关掉或拔掉 Apple TV。在 RmoteVibe 设置或系统蓝牙里配对。连上的标志是 IOHID 看到产品号 `0x0315`。不需要序列号。
 
 ## Screenshots · 截图
 
-| Menu bar · 菜单栏 | Settings · 设置 | App icon · 图标 |
-| --- | --- | --- |
-| ![Menu bar](docs/screenshots/menu-bar.png) | ![Settings](docs/screenshots/settings.png) | ![App icon](docs/screenshots/app-icon.png) |
+| General · 通用 | Buttons · 按键 |
+| --- | --- |
+| ![General](docs/screenshots/general.png) | ![Buttons](docs/screenshots/buttons.png) |
+
+| Touch · 触控 | Voice · 语音 |
+| --- | --- |
+| ![Touch](docs/screenshots/touch.png) | ![Voice](docs/screenshots/voice.png) |
 
 ## Build · 编译
 
@@ -49,13 +67,13 @@ The app is signed **ad-hoc** (`CODE_SIGN_IDENTITY = "-"`). Copy `build/Release/R
 
 ### HAL plugin · 音频插件（sudo 一次）
 
-RmoteVibe Mic is a Core Audio HAL plug-in. Install it once from **Settings → Install RmoteVibe Mic** (AppleScript `sudo` prompt). That copies the driver to `/Library/Audio/Plug-Ins/HAL/RmoteVibeMic.driver` and restarts `coreaudiod`. Replacing the app later does not always reinstall the plug-in.
+RmoteVibe Mic is a Core Audio HAL plug-in. Install it once from **Settings → Voice → Install RmoteVibe Mic** (AppleScript `sudo` prompt). That copies the driver to `/Library/Audio/Plug-Ins/HAL/RmoteVibeMic.driver` and restarts `coreaudiod`. Replacing the app later does not always reinstall the plug-in.
 
-RmoteVibe Mic 是 Core Audio HAL 插件。在 **设置 → 安装 RmoteVibe Mic** 装一次（会弹出管理员密码）。驱动拷到 `/Library/Audio/Plug-Ins/HAL/RmoteVibeMic.driver` 并重启 `coreaudiod`。以后只替换 App 不一定会重装插件。
+RmoteVibe Mic 是 Core Audio HAL 插件。在 **设置 → 语音 → 安装 RmoteVibe Mic** 装一次（会弹出管理员密码）。驱动拷到 `/Library/Audio/Plug-Ins/HAL/RmoteVibeMic.driver` 并重启 `coreaudiod`。以后只替换 App 不一定会重装插件。
 
-Leave the **system default input** on the Mac microphone. Select **RmoteVibe Mic** once inside 豆包 (or Auto).
+Leave the **system default input** on the Mac microphone. Select **RmoteVibe Mic** once inside 豆包, or leave 豆包 on **Auto**.
 
-系统默认输入保持 Mac 自己的麦克风。在豆包里选一次 **RmoteVibe Mic**（或自动）。
+系统默认输入保持 Mac 自己的麦克风。在豆包里选一次 **RmoteVibe Mic**，或保持 **自动**。
 
 ## Permissions · 权限
 
@@ -70,15 +88,6 @@ Grant these in System Settings. An ad-hoc rebuild can drop some of them, so togg
 | **Input Monitoring** | Read HID from vendor `0x004C` product `0x0315` · 读取该 HID 设备 |
 | **Microphone** | Play the Mac mic through RmoteVibe Mic when Siri is not held · 没按住 Siri 时把 Mac 麦送到虚拟麦 |
 | **Login Items** | Open at login · 开机启动 |
-
-## Pairing · 配对
-
-1. Turn the Apple TV off or unplug it. The remote is exclusive.
-2. Hold **Back + Volume Up** about five seconds until the light flashes.
-3. Search in RmoteVibe Settings, or connect it in Bluetooth settings. It often appears as a serial-looking name, not “Siri Remote”. You do not enter that serial anywhere.
-4. Connected means IOHID sees product `0x0315`.
-
-关掉或拔掉 Apple TV（遥控器同时只能连一边）。按住 **返回 + 音量加** 约五秒直到灯闪。在 RmoteVibe 设置里搜索，或到系统蓝牙里连接。设备名经常是一串序号，不是 “Siri Remote”；不必把它填进 App。连上的标志是 IOHID 看到产品号 `0x0315`。
 
 ## License
 

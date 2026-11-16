@@ -40,6 +40,8 @@
 		A10000000000000000000065 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000076 /* ApplicationServices.framework */; };
 		A10000000000000000000066 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000077 /* ServiceManagement.framework */; };
 		A100000000000000000000B6 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A6 /* LoginItem.swift */; };
+		A100000000000000000000F1 /* SettingsChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000F0 /* SettingsChrome.swift */; };
+		A100000000000000000000F3 /* RemoteKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000F2 /* RemoteKeysView.swift */; };
 		A10000000000000000000092 /* RmoteVibeMic.driver in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* RmoteVibeMic.driver */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		A10000000000000000000076 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		A10000000000000000000077 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		A100000000000000000000A6 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		A100000000000000000000F0 /* SettingsChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChrome.swift; sourceTree = "<group>"; };
+		A100000000000000000000F2 /* RemoteKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteKeysView.swift; sourceTree = "<group>"; };
 		A100000000000000000000E0 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		A100000000000000000000E1 /* MenuBarRemote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarRemote.png; sourceTree = "<group>"; };
 		A100000000000000000000E2 /* MenuBarRemote@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBarRemote@2x.png"; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				A10000000000000000000021 /* AppModel.swift */,
 				A10000000000000000000022 /* MenuBarController.swift */,
 				A10000000000000000000023 /* SettingsWindowController.swift */,
+				A100000000000000000000F0 /* SettingsChrome.swift */,
+				A100000000000000000000F2 /* RemoteKeysView.swift */,
 				A10000000000000000000024 /* Preferences.swift */,
 				A10000000000000000000025 /* HIDRemote.swift */,
 				A10000000000000000000026 /* TalkTrigger.swift */,
@@ -313,6 +319,8 @@
 				A10000000000000000000041 /* AppModel.swift in Sources */,
 				A10000000000000000000042 /* MenuBarController.swift in Sources */,
 				A10000000000000000000043 /* SettingsWindowController.swift in Sources */,
+				A100000000000000000000F1 /* SettingsChrome.swift in Sources */,
+				A100000000000000000000F3 /* RemoteKeysView.swift in Sources */,
 				A10000000000000000000044 /* Preferences.swift in Sources */,
 				A10000000000000000000045 /* HIDRemote.swift in Sources */,
 				A10000000000000000000046 /* TalkTrigger.swift in Sources */,

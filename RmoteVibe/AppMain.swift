@@ -19,6 +19,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             settings?.refresh()
         }
         model.start()
+        if CommandLine.arguments.contains("--settings")
+            || FileManager.default.fileExists(atPath: "/tmp/rmv-open-settings") {
+            try? FileManager.default.removeItem(atPath: "/tmp/rmv-open-settings")
+            settings.show()
+        }
     }
 
     func applicationWillTerminate(_ notification: Notification) {
