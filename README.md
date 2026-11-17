@@ -14,6 +14,12 @@ Use a **USB-C Apple TV Siri Remote** (model A2854, Apple VID `0x004C` PID `0x031
   <img src="docs/screenshots/menu-bar.png" alt="Menu bar icon" width="520">
 </p>
 
+## Demo · 演示
+
+[RmoteVibe intro](docs/RmoteVibeIntro.mp4)
+
+GitHub may download or play the file rather than embed it inline. · GitHub 可能下载或播放该文件，而不是在页面里内嵌。
+
 ## Usage · 用法
 
 - **Menu bar + Settings.** Lives in the menu bar. **Settings…** opens a glass sidebar window (General, Remote, Buttons, Touch, Voice, Permissions).
